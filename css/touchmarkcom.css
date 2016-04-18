@@ -952,7 +952,8 @@ body {
     color: #006EDB; }
 */
   body a {
-    color: #337ab7;
+    /*color: #337ab7;*/
+    color: #266726;
     text-decoration: none; 
     background-color: transparent;
 }
@@ -1181,6 +1182,7 @@ body {
       top: 0; } }
   @media screen and (max-width: 979px) {
     .corp.interior #main {
+      padding-left: 10px;
       margin: 0 auto; } }
   .corp.interior #main h1 {
     font-size: 38px;
@@ -1285,7 +1287,7 @@ body {
 #p_content.part_text p, #p_col1_bottom p {
   margin-bottom: 12px; }
   #p_content.part_text p a, #p_col1_bottom p a {
-    color: #635a55;
+    color: #266726; /* #635a55 */
     font-weight: 600;
     word-wrap: break-word; }
 #p_content.part_text ul, #p_col1_bottom ul {
@@ -1315,7 +1317,7 @@ body {
       #p_content.part_text ul li, #p_col1_bottom ul li {
         padding-right: 0px; } }
     #p_content.part_text ul li a, #p_col1_bottom ul li a {
-      color: #635a55;
+      color: #266726;
       font-weight: 600;
       word-wrap: break-word; }
 
@@ -2669,9 +2671,10 @@ div#thank_you p {
 #formWrapper input[type=text],
 #formWrapper input[type=email],
 #formWrapper input[type=url],
+#formWrapper input[type=file],
 #formWrapper input[type=password],
 #formWrapper textarea {
-  width: 75%;
+  width: 74%;
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-right: 1px solid #eee;
@@ -2679,6 +2682,7 @@ div#thank_you p {
 #formWrapper input[type=text],
 #formWrapper input[type=email],
 #formWrapper input[type=url],
+#formWrapper input[type=file],
 #formWrapper input[type=password] {
   width: 50%; }
 #formWrapper input[type=text]:focus,
@@ -2693,17 +2697,14 @@ div#thank_you p {
   background-color: #faf7f6;
   font-size: 14px; }
 #formWrapper input {
-  
+  height: 35px;
   padding: 0 10px; }
-#formWrapper label {
-    display: inline-block;
-    padding-left: 10px; }
 #formWrapper textarea {
   min-height: 35px;
   padding: 10px 0 0 10px; }
-#formWrapper input[type=submit] {
+#formWrapper input[type=submit],
+#formWrapper input[type=button] {
   width: 80px;
-  height: 35px;
   background-color: #266726;
   border: none; }
 @media (max-width: 600px) {
@@ -2753,17 +2754,21 @@ div#thank_you p {
 input[type="button"], input[type="reset"], input[type="submit"] {
   background-color: #266726;
   color: #ffffff;
-  padding: 10px;
+  /*padding: 10px; GWM*/
   border: none;
-  margin-top: 16px; }
+  margin-top: 16px;
+  width: 80px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 14px; }
   input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
     background-color: #ccc4ae; }
 
 /* font-face */
 @font-face {
   font-family: "GeneralFoundicons";
-  src: url("/stylesheets/fonts/three/foundation-icons.eot");
-  src: url("/stylesheets/fonts/three/foundation-icons.eot?#iefix") format("embedded-opentype"), url("/stylesheets/fonts/three/foundation-icons.woff") format("woff"), url("/stylesheets/fonts/three/foundation-icons.ttf") format("truetype"), url("/stylesheets/fonts/three/foundation-icons.svg#GeneralFoundicons") format("svg");
+  src: url("/images/foundation-icons.eot");
+  src: url("/images/foundation-icons.eot?#iefix") format("embedded-opentype"), url("/images/foundation-icons.woff") format("woff"), url("/images/foundation-icons.ttf") format("truetype"), url("/images/foundation-icons.svg#GeneralFoundicons") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* global foundicon styles */
@@ -4022,10 +4027,10 @@ img.bulletIcon {
 .wrapper { 
     overflow:hidden;
 }
-/*.wrapper div {
-    min-height: 200px;
+.wrapper div {
+/*    min-height: 200px; Removed GWM 2/24/16 */
     padding: 10px;
-}*/
+}
 #one {
     float:left; 
     margin-right:20px;

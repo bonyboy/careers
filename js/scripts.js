@@ -11,19 +11,19 @@ $(document).ready(function(){
 
  if (!$('html').hasClass("lt-ie10")) {
 
-  $('<img id="li-arrow" class="svg" src="http://touchmark.com/images/tm_arrow.svg"></img>').appendTo('span.li-arrow');
-  $('<img id="header_arrow" class="svg" src="http://touchmark.com/images/tm_cta_arrow.svg" ></img>').appendTo('a.communities-button span');
-  $('<img id="tm_cta_arrow" class="svg" src="http://touchmark.com/images/tm_cta_arrow.svg"></img>').appendTo('span.arrow-block');
-  $('<img id="tm_hm-cta_arrow" class="svg" src="http://touchmark.com/images/tm_cta_arrow.svg"></img>').appendTo('div.cta-item a span');
+  $('<img id="li-arrow" class="svg" src="images/tm_arrow.svg"></img>').appendTo('span.li-arrow');
+  $('<img id="header_arrow" class="svg" src="images/tm_cta_arrow.svg" ></img>').appendTo('a.communities-button span');
+  $('<img id="tm_cta_arrow" class="svg" src="images/tm_cta_arrow.svg"></img>').appendTo('span.arrow-block');
+  $('<img id="tm_hm-cta_arrow" class="svg" src="images/tm_cta_arrow.svg"></img>').appendTo('div.cta-item a span');
 
-  $('<img id="tm_hm-cta_arrow" class="svg tester" src="http://touchmark.com/images/tm_cta_arrow.svg"></img>').appendTo('#home #cta-contain div.cta div.cta-item a span');
+  $('<img id="tm_hm-cta_arrow" class="svg tester" src="images/tm_cta_arrow.svg"></img>').appendTo('#home #cta-contain div.cta div.cta-item a span');
  }
 
  else {
-  $('<img id="li-arrow" src="http://touchmark.com/images/tm_arrow_sm.svg"></img>').appendTo('span.li-arrow');
-  $('<img id="block-arrow_sm" src="http://touchmark.com/images/block-arrow_sm.svg"></img>').appendTo('span.arrow-block');
-  $('<img id="block-arrow" src="http://touchmark.com/images/block-arrow.svg"></img>').appendTo('div.cta-item a span');
-  $('<img id="header_arrow" src="http://touchmark.com/images/c-arrow.svg" ></img>').appendTo('a.communities-button span');
+  $('<img id="li-arrow" src="images/tm_arrow_sm.svg"></img>').appendTo('span.li-arrow');
+  $('<img id="block-arrow_sm" src="images/block-arrow_sm.svg"></img>').appendTo('span.arrow-block');
+  $('<img id="block-arrow" src="images/block-arrow.svg"></img>').appendTo('div.cta-item a span');
+  $('<img id="header_arrow" src="images/c-arrow.svg" ></img>').appendTo('a.communities-button span');
 }
 
   $('.vid-container').fitVids();

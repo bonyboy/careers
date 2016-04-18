@@ -1,0 +1,120 @@
+body.hosted {background: url(../images/branding.gif); background-repeat: repeat-x; font-family : verdana, arial, sans-serif; padding: 6px;}
+body.hosted img#logo { margin-left: 12px; border:0;}
+body.hosted ol,ul {list-style:none;}
+body.hosted #hosted-box {height: 100px;}
+body.hosted {font-size: 12px;}
+body.hosted div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,th,td{margin:0;padding:0;}
+
+form.cmxform fieldset {
+    margin-bottom: 10px;
+}
+body.hosted form.cmxform fieldset{border:0;}
+
+form.cmxform legend {
+    padding: 0 2px;
+    font-weight: bold;
+    _margin: 0 -7px; /* IE Win */
+    line-height: 0;
+    height: 0;
+    text-indent: -9999px;
+}
+body.hosted form.cmxform legend {padding: 0;}
+
+form.cmxform label {
+    display: inline-block;
+    line-height: 1.8;
+    vertical-align: top;
+}
+body.hosted form.cmxform label {margin-right: 5px;}
+
+form.cmxform fieldset ol {
+    margin: 0;
+    padding: 0;
+}
+
+form.cmxform fieldset li {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
+form.cmxform em {
+    font-weight: bold;
+    font-style: normal;
+    color: #f00;
+}
+
+form.cmxform label {
+    width: 120px;
+} /* Width of labels */
+form.cmxform fieldset fieldset label {
+    margin-left: 123px;
+} /* Width plus 3 (html space) */
+/*\*/ /*/ form.cmxform legend { display: inline-block; } /* IE Mac legend fix */
+
+p.close {display:none;}
+
+#error { margin: 1em 0; border: 1px solid #ececec; padding: 12px; background: #EFEFEF;}
+
+.fieldWithErrors {
+    display: inline;
+}
+.fieldWithErrors input, .fieldWithErrors select {
+    background-color: #ffdfdf;
+}
+
+div#thank_you {padding: 1em; width:94%;/*clear:both;*/}
+div#thank_you p {
+    background-color: #DFD;
+    border:  1px solid #000;
+    padding: .5em; margin-bottom: 1em;
+}
+div#thank_you p.uCode {font-size:90%;background-color:transparent;border:none;margin-bottom:0.25em;padding:0;}
+
+div#thank_you #return_link{padding: 1em 0;}
+
+div#editor-content li.start_date img {padding: 0 0 0 5px;}
+
+dl.thanks_data {
+    width: 40em;
+    margin: 2em 0;
+    padding: 0;
+}
+
+dl.thanks_data dt {
+    width: 20em;
+    float: left;
+	white-space: nowrap;
+	line-height: 1.7em;
+    margin: 0 0 0 0;
+    padding: .5em;
+    border-top: 1px solid #999;
+    font-weight: bold;
+}
+
+dl.thanks_data dd {
+    margin: 0 0 0 0;
+    padding: .5em;
+	line-height: 1.7em;
+    border-top: 1px solid #999;
+}
+
+form:after {
+    background:url("/images/global/loading.gif") center no-repeat;
+    background-color:rgba(200,200,200,.8);
+    display:none;
+}
+
+form.alreadysubmitted {
+    position:relative;
+}
+
+form.alreadysubmitted:after {
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:"";
+}
