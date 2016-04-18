@@ -8,29 +8,76 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="format-detection" content="telephone=no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta content="Touchmark offers rewarding careers with competitive benefits and salaries. Please view our website for current employment opportunities." name="description" />
 
-<title>Careers at Touchmark</title>
+<title>Career Benefits at Touchmark</title>
 
 <!-- CSS Styles -->
-<link rel="stylesheet" href="https://touchmark.net/careers/css/touchmarkcom.css" type="text/css" media="screen">
-<link rel="stylesheet" href="https://touchmark.net/careers/css/responsiveslides.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/touchmarkcom.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/responsiveslides.css" type="text/css" media="screen">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css"> <!-- Optional -->
+<link rel="stylesheet" href="css/liquid-slider.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700|PT+Serif' rel='stylesheet' type='text/css'>
-<link href="https://touchmark.net/careers/images/favicon.png" rel="shortcut icon" type="image/png">
+<link href="images/favicon.png" rel="shortcut icon" type="image/png">
+<link href="css/print_style.css" media="print" rel="stylesheet" type="text/css">
 
 <!-- Javascript -->
-<script src="https://touchmark.net/careers/js/jquery.js" type="text/javascript"></script>
-<script src="https://touchmark.net/careers/js/touchmarkcom.js" type="text/javascript"></script>
-<script src="https://touchmark.net/careers/js/modernizr.js" type="text/javascript"></script>
-<script src="https://touchmark.net/careers/js/responsive-nav.js" type="text/javascript"></script>
-<script src="https://touchmark.net/careers/js/g5-responsive.js" type="text/javascript"></script>
-<script src="https://touchmark.net/careers/js/scripts.js" type="text/javascript"></script>
-<script src="https://touchmark.net/careers/js/jquery.tooltipster.js" type="text/javascript"></script>
-<script src="https://touchmark.net/careers/js/responsiveslides.min.js" type="text/javascript"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/touchmarkcom.js" type="text/javascript"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
+<script src="js/picture-tag.js" type="text/javascript"></script>
+<script src="js/responsive-nav.js" type="text/javascript"></script>
+<script src="js/jquery.fitvids.js" type="text/javascript"></script>
+<script src="js/g5-responsive.js" type="text/javascript"></script>
+<script src="js/scripts.js" type="text/javascript"></script>
+<script src="js/jquery.tooltipster.js" type="text/javascript"></script>
+<script src="js/responsiveslides.min.js" type="text/javascript"></script>
+<script type="text/javascript">var ie8 = false; var ie9 = false;</script>
 <!--[if IE 8]><script type="text/javascript">var ie8 = true;</script><![endif]-->
 <!--[if IE 9]><script type="text/javascript">var ie9 = true;</script><![endif]-->
+
+
+<script>
+    $(document).ready(function() {
+    "use strict";
+    function pictureInit(callback) {
+        if(ie9 === true){
+        $('video').each(function() {
+            $(this).children().unwrap();
+        });
+        } else if (ie8 === true) {
+        $('#slideshow img[src*="tiny-"]').each(function() {
+            var newSrc = $(this).attr('src');
+            newSrc = newSrc.replace('tiny-','large-');
+            $(this).attr('src', newSrc);
+        });
+        }
+        callback();
+    }
+
+    pictureInit(function() {
+        $('picture').pictureTag();
+    });
+
+    // set up drop-downs inside mobile nav menu
+    touchNavToggle();
+
+    });
+</script>
+
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides({
+    speed: 700,
+    maxwidth: 1600           
+    });
+  });
+</script>
+
 
 </head>
 
@@ -64,11 +111,11 @@
 </div>
   <![endif]-->
 
-  <header>
       <!-- ResponsiveSlides GWM 2/11/16 -->
+  <header>
     <div class="rslides_container">
       <ul class="rslides" id="slider1">
-        <li><img src="https://www.touchmark.net/careers/images/careers-header-videos-1600.jpg" alt="Find your rewarding career at Touchmark"></li>
+        <li><img src="images/careers-interior-benefits.jpg" alt=""></li>
       </ul>
     </div>
      <div id="header-content">
