@@ -1,0 +1,15 @@
+
+  svg{display: none!important}
+  
+  .nav{display: none!important}
+
+  header{display:none!important}
+
+  #directionsForm{display: none!important;}
+
+  #flashmap,
+  #directionsMap {
+    width: 740px;
+    height: 420px;
+    page-break-before: avoid!important;
+  }

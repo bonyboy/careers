@@ -1,0 +1,83 @@
+/* Beginning of ResponsiveSlides.js styling */
+
+#slideshow-container {
+  width: 100%;
+  background-color: #ffffff; }
+  @media screen and (max-width: 979px) {
+    #slideshow-container {
+      display: none; } }
+
+.galleria-container {
+  width: 100%; }
+
+#slideshow {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  background-color: #266726; }
+  #slideshow ul.rslides_tabs {
+    display: none; }
+  #slideshow .rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 1400px;
+    max-width: 1400px;
+    margin: 0 auto; }
+    #slideshow .rslides li {
+      position: absolute;
+      width: 100%;
+      list-style: none; }
+    #slideshow .rslides img, #slideshow .rslides picture {
+      display: block;
+      float: left;
+      min-width: 100%;
+      max-width: 100%;
+      height: auto;
+      border: 0;
+      z-index: 9; }
+  #slideshow #slideshow-overlay-container {
+    position: absolute;
+    width: 90%;
+    height: 43px;
+    top: 50%;
+    left: 5%;
+    margin-top: -39px; }
+    @media screen and (max-width: 767px) {
+      #slideshow #slideshow-overlay-container {
+        display: none; } }
+  #slideshow #slideshow-overlay {
+    width: 67.75%;
+    margin: 0 auto; }
+  #slideshow .rslides_nav {
+    width: 22px;
+    height: 43px; }
+  #slideshow .rslides_nav.prev {
+    float: left;
+    font-size: 0;
+    background-image: url(/images/chevron-slideshow-left.png); }
+  #slideshow .rslides_nav.next {
+    float: right;
+    font-size: 0;
+    background-image: url(/images/chevron-slideshow-right.png); }
+
+#rslides .rslides_tabs {
+  display: none; }
+@media screen and (max-width: 767px) {
+  #rslides {
+    display: none; } }
+
+@media screen and (max-width: 979px) {
+  .corp.interior #slideshow {
+    display: none; } }
+.corp.interior #slideshow .rslides {
+  height: 120px; }
+
+.store.interior #slideshow {
+  padding-top: 5.0em; }
+  @media screen and (max-width: 979px) {
+    .store.interior #slideshow {
+      display: none; } }
+  .store.interior #slideshow .rslides {
+    height: 168px; }
