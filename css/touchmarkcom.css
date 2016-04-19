@@ -398,7 +398,7 @@ header {
     width: 100%;
     position: absolute;
     top: 17px;
-    background-image: url(http://touchmark.com/images/navbar_bg.png);
+    background-image: url(../images/navbar_bg.png);
     background-repeat: repeat-x; }
     @media screen and (max-width: 979px) {
       header #header-content {
@@ -559,7 +559,7 @@ header {
   z-index: 999999;
   border-radius: 3px;
   background-color: #266726;
-  background-image: url("http://touchmark.com/images/bars.png");
+  background-image: url("../images/bars.png");
   background-position: 79px 7px;
   background-repeat: no-repeat;
   color: white;
@@ -570,7 +570,7 @@ header {
   text-transform: uppercase;
   text-decoration: none; }
   .toggleMenu:hover {
-    background-image: url("http://touchmark.com/images/bars.png") !important;
+    background-image: url("../images/bars.png") !important;
     background-color: #5b815b;
     text-decoration: none; }
 
@@ -897,17 +897,6 @@ header {
         color: #77787B;
         padding: 11px 9px;
         border-radius: 5px; }
-/* Beginning of ResponsiveSlides.js styling */
-
-/* Begining of GWM Responsive header image */
- #header-img {
-    background-image: url(https://res.cloudinary.com/bonytest/image/upload/v1440448711/touchmark-careers-demo/small-tafv-1555-1706-careers.jpg);
-    padding-top: 500px;
-    @media screen and (max-width: 979px) {
-        background-image: url(https://res.cloudinary.com/bonytest/image/upload/v1440448711/touchmark-careers-demo/huge-tafv-1555-1706-careers.jpg);
-    }
-}
-/* End of GWM Responsive header image */
 
 div.news {
   border: 1px solid #ccc;

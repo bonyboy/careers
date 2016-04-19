@@ -261,7 +261,7 @@ Partial Class displayJob
         'Response.Redirect(BaseURL & "/cus/displayjobsubmitmessage.aspx")
 
         'ScriptManager.RegisterStartupScript(Me.Page, GetType(String), "redirect", "location.href='displayjobsubmitmessage.aspx?url=" & EntityURL & PreHireURL & "';", True)
-        ScriptManager.RegisterStartupScript(Me.Page, GetType(String), "redirect", "location.href='displayjobmessage.aspx" & PreHireURL & "';", True)
+        ScriptManager.RegisterStartupScript(Me.Page, GetType(String), "redirect", "location.href='http://www.touchmark.net/careers/displayjobmessage.aspx" & PreHireURL & "';", True)
 
     End Sub
 
